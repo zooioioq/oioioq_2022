@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+
+/* reset */
+html, body { width : 100%; height : 100%; margin : 0; padding : 0; } h1, h2, h3, h4, h5, h6, p, pre, blockquote, address, ul, ol, li, dl, dt, dd, img, br, hr, div { margin : 0; padding : 0; border : 0; outline : 0; } h1, h2, h3, h4, h5, h6 { font-size : 1rem; font-weight: 400; } ul, li, ol { list-style : none; } a { color : inherit; text-decoration: none; } header, nav, section, article, footer, aside, main, figure, figcaption {  display : block;  } abbr {  text-decoration: none; } address {  font-style: normal; } fieldset {  padding : 0;  margin : 0;  border : 0; } button { border : 0; background-color : transparent; outline: none; cursor: pointer; } input, select { outline: none; }
+/* font */
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-Thin.woff2'); font-weight: 100; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-ExtraLight.woff2'); font-weight: 200; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-Light.woff2'); font-weight: 300; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-Regular.woff2'); font-weight: normal; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-Medium.woff2'); font-weight: 500; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-SemiBold.woff2'); font-weight: 600; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-Bold.woff2'); font-weight: 700; }
+@font-face { font-family: 'SUIT'; src: url('../font/SUIT-ExtraBold.woff2'); font-weight: 800; }
+* {
+  font-family: 'SUIT';
+  color : #333;
+}
+/* function */
+.blind {
+  display: block;
+  width : 0;
+  height : 0;
+  position: relative;
+  z-index: -99999;
+  overflow: hidden;
+}
+/* layout */
+#wrap {
+  width : 1280px;
+  height: auto;
+  margin: auto;
+}
+/* header */
+.header {
+  width : 100%;
+  height: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.headTitle {
+  padding : 20px 0;
+  box-sizing: border-box;
+}
+.headTitle > h1 {
+  font-weight: 800;
+}
+.headTitle > span {
+  font-size: 12px;
+  font-weight: 100;
+}
+.nav {
+  width : 300px;
+  padding : 30px 0;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.nav > ul {
+  display: flex;
+  width : 100%;
+  justify-content: space-between;
+}
+.nav > ul > li > a {
+  position: relative;
+}
+.nav > ul > li > a > span {
+  transition: all 500ms ease;
+}
+.nav > ul > li > a > span:first-child {
+  text-transform: uppercase;
+  opacity: 1;
+}
+.nav > ul > li > a > span:last-child {
+  position: absolute;
+  top: 50%;
+  left : 50%;
+  font-size: 14px;
+  color : #8eafce;
+  transform: translate(-50%, -50%);
+  transition-delay: 100ms;
+  opacity: 0;
+}
+.nav > ul > li > a:hover > span:first-child,
+.nav > ul > li > a:focus > span:first-child {
+  opacity: 0;
+}
+.nav > ul > li > a:hover > span:last-child,
+.nav > ul > li > a:focus > span:last-child {
+  opacity: 1;
+}
+/* content ::portfolio */
+.contant {
+  width : 100%;
+  height : auto;
+  margin-bottom : 80px;
+}
+.conCategory {
+  width : 100%;
+  margin-bottom : 40px;
+}
+.conCategory > ul {
+  display: flex;
+}
+.conCategory > ul > li {
+  margin-right : 40px;
+  font-weight: 100;
+  opacity: 0.5;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 500ms ease;
+}
+.conCategory > ul > li.act {
+  opacity: 1;
+  font-weight: normal;
+}
+.conCategory > ul > li:hover,
+.conCategory > ul > li:focus {
+  opacity: 1;
+}
+.conInner,
+.conList,
+.conListUl {
+  width : 100%;
+  height : auto;
+}
+.conInner {
+  height: calc(100vh - 380px);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.conInner::-webkit-scrollbar {
+  display: none;
+}
+.conListUl {
+  display: flex;
+  flex-wrap: wrap;
+}
+.conLi {
+  width : 400px;
+  height : 240px;
+  margin-right : 40px;
+  margin-bottom : 40px;
+  background-color: #8eafce;
+}
+.conLi:nth-child(3n) {
+  margin-right: 0;
+}
+.conLi > a {
+  position: relative;
+  display: block;
+  width : 100%;
+  height: 100%;
+  padding : 20px;
+  box-sizing: border-box;
+}
+.conLi > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top : 0;
+  left: 0;
+  width : 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.conLi > a .lineBox {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin : auto;
+  background: none;
+}
+.conLi > a .lineBox::after,
+.conLi > a .lineBox::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left : 50%;
+  top : 50%;
+  width : 0;
+  height: 0;
+  border-width: 1px;
+  border-color: #fff;
+  transition: all 500ms ease;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.conLi > a .lineBox::after {
+  height: 100%;
+  border-style: solid none;
+}
+.conLi > a .lineBox::before {
+  width: 100%;
+  border-style: none solid;
+}
+.conLi > a:hover::after,
+.conLi > a:hover .conLiTitle,
+.conLi > a:hover .conLiDescrip {
+  opacity: 1;
+}
+.conLi > a:hover .lineBox::after,
+.conLi > a:hover .lineBox::before {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  opacity: 1;
+}
+.lineBox > .conLiTitle {
+  position: absolute;
+  display: block;
+  width: 100%;
+  margin-top : 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+.lineBox > .conLiDescrip {
+  position: absolute;
+  top : 80px;
+  left : 50%;
+  width : 80%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 500ms ease;
+}
+.lineBox > .conLiDescrip > p {
+  text-align: center;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.5;
+  color : #fff;
+}
+.conLiImg {
+  position: absolute;
+  left :0;
+  top : 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* footer */
+.footer {
+  width : 100%;
+  height : 80px;
+  padding : 32px 0;
+  box-sizing: border-box;
+}
+.footer > span {
+  display: block;
+  width : 100%;
+  text-align: center;
+  font-weight: 100;
+  font-size: 12px;
+  color : #767676;
+}
