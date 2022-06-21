@@ -53,28 +53,34 @@
         <div class="conInner">
           <!-- contactBox -->
           <div class="contactBox">
-            <form>
+            <form class="gform" method="POST" data-email="zooi.oi.oq@gmail.com" action="https://script.google.com/macros/s/AKfycbxpyhEGTp9_fzkBJBa5eT9dyVaxEz8_teoFnjjURC0hrmBTrZv1HtPpa5hAOgfGh-ma/exec">
               <div>
                 <label class="inputTitle" for="nameInput"> name </label>
-                <input type="text" id="nameInput" class="input">
+                <input type="text" id="nameInput" name="name" class="input">
               </div>
               <div>
                 <label class="inputTitle" for="mailInput"> e-mail </label>
-                <input type="email" id="mailInput" class="input">
+                <input type="email" id="mailInput" name="email" class="input">
               </div>
               <div>
                 <label class="inputTitle" for="phoneNumInput"> number </label>
-                <input type="text" id="phoneNumInput" class="input">
+                <input type="text" id="phoneNumInput" name="number" class="input">
               </div>
               <div>
                 <label class="inputTitle" for="conInput"> message </label>
-                <textarea class="input" id="conInput" placeholder="문의하실 내용을 작성해주세요"></textarea>
+                <textarea class="input" id="conInput" name="message" placeholder="문의하실 내용을 작성해주세요"></textarea>
               </div>
               <button type="submit" class="sendBtn"><span> send </span><span> 전송 </span></button>
+              <div style="display:none" class="emailPop">
+                <div class="popBox">
+                  <p> 감사합니다. <br> 확인 후 빠른 시일내에 연락드리겠습니다 : ) </p>
+                  <button type="button"> 확인 </button>
+                </div>
+               </div>
             </form>
           </div>
           <!-- // contactBox -->
-          <p> ※ 문의를 남겨주시면 빠른 시일내에 기입해주신 이메일로 연락 드리겠습니다. 감사합니다 : ) </p>
+          <p> ※ 문의를 남겨주시면 기입해주신 이메일로 연락드리겠습니다. 감사합니다 : ) </p>
         </div>
         <!-- // conInner -->
       </div>
