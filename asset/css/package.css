@@ -34,25 +34,26 @@ html, body { width : 100%; height : 100%; margin : 0; padding : 0; } h1, h2, h3,
 /* header */
 .header {
   width : 100%;
-  height: 80px;
+  height: 100px;
   margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
 }
 .headTitle {
-  padding : 20px 0;
+  padding : 24px 0;
   box-sizing: border-box;
 }
 .headTitle > h1 {
   font-weight: 800;
+  font-size: 24px;
 }
 .headTitle > span {
-  font-size: 12px;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 200;
 }
 .nav {
   width : 300px;
-  padding : 30px 0;
+  padding : 38px 0;
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -89,7 +90,7 @@ html, body { width : 100%; height : 100%; margin : 0; padding : 0; } h1, h2, h3,
 .nav > ul > li > a:focus > span:last-child {
   opacity: 1;
 }
-/* content ::portfolio */
+/* content :: portfolio */
 .contant {
   width : 100%;
   height : auto;
@@ -104,9 +105,8 @@ html, body { width : 100%; height : 100%; margin : 0; padding : 0; } h1, h2, h3,
 }
 .conCategory > ul > li {
   margin-right : 40px;
-  font-weight: 100;
+  font-weight: 200;
   opacity: 0.5;
-  font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 500ms ease;
@@ -155,6 +155,7 @@ html, body { width : 100%; height : 100%; margin : 0; padding : 0; } h1, h2, h3,
   height: 100%;
   padding : 20px;
   box-sizing: border-box;
+  cursor: url('../img/click.svg') 20 30, pointer;
 }
 .conLi > a::after {
   content: "";
@@ -245,6 +246,112 @@ html, body { width : 100%; height : 100%; margin : 0; padding : 0; } h1, h2, h3,
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* content :: contact */
+.contactBox {
+  width : 100%;
+  height : auto;
+  padding : 40px;
+  box-sizing: border-box;
+  background-color: #f5f6f8;
+}
+.contactBox > form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.5fr;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
+}
+.contactBox > form > div:first-child {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.contactBox > form > div:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.contactBox > form > div:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+.contactBox > form > div:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.contactBox > form > button {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.contactBox .inputTitle {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.contactBox .input {
+  width: 99%;
+  height : 40px;
+  border : 0;
+  outline: none;
+  text-indent: 10px;
+  font-size: 16px;
+  color : #767676;
+  cursor: url('../img/input.svg') 20 30, pointer;
+}
+.contactBox .input::placeholder {
+  font-weight: 100;
+  color : #aaa;
+}
+.contactBox textarea.input {
+  height : 267px;
+  padding : 10px;
+  box-sizing: border-box;
+  resize: none;
+  line-height: 1.5;
+  text-indent: 0;
+}
+.contactBox .sendBtn {
+  position: relative;
+  width: 50px;
+  margin-left : auto;
+  cursor: url('../img/send.svg') 20 30, pointer;
+}
+.contactBox .sendBtn > span {
+  position: absolute;
+  top : 50%;
+  right : 0;
+  font-size: 16px;
+  transition: all 500ms ease;
+  transition-delay: 100ms;
+  transform: translateY(-50%);
+}
+.contactBox .sendBtn > span:first-child {
+  text-transform: uppercase;
+}
+.contactBox .sendBtn > span:last-child {
+  color: #8eafce;
+  opacity: 0;
+}
+.contactBox .sendBtn:hover > span:first-child {
+  opacity: 0;
+}
+.contactBox .sendBtn:hover > span:last-child {
+  opacity: 1;
+}
+.conInner > p {
+  font-weight: 200;
+  margin-top : 20px;
+  color : #767676;
 }
 /* footer */
 .footer {
