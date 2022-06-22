@@ -56,25 +56,25 @@
             <form class="gform" method="POST" data-email="zooi.oi.oq@gmail.com" action="https://script.google.com/macros/s/AKfycbxpyhEGTp9_fzkBJBa5eT9dyVaxEz8_teoFnjjURC0hrmBTrZv1HtPpa5hAOgfGh-ma/exec">
               <div>
                 <label class="inputTitle" for="nameInput"> name </label>
-                <input type="text" id="nameInput" name="name" class="input">
+                <input type="text" id="nameInput" name="name" class="input" required>
               </div>
               <div>
                 <label class="inputTitle" for="mailInput"> e-mail </label>
-                <input type="email" id="mailInput" name="email" class="input">
+                <input type="email" id="mailInput" name="email" class="input" required>
               </div>
               <div>
                 <label class="inputTitle" for="phoneNumInput"> number </label>
-                <input type="text" id="phoneNumInput" name="number" class="input">
+                <input type="text" id="phoneNumInput" name="number" class="input" required>
               </div>
               <div>
                 <label class="inputTitle" for="conInput"> message </label>
-                <textarea class="input" id="conInput" name="message" placeholder="문의하실 내용을 작성해주세요"></textarea>
+                <textarea class="input" id="conInput" name="message" placeholder="문의하실 내용을 작성해주세요" required></textarea>
               </div>
               <button type="submit" class="sendBtn"><span> send </span><span> 전송 </span></button>
               <div style="display:none" class="emailPop">
                 <div class="popBox">
                   <p> 감사합니다. <br> 확인 후 빠른 시일내에 연락드리겠습니다 : ) </p>
-                  <button type="button"> 확인 </button>
+                  <div class="emailPopClose"> 확인 </div>
                 </div>
                </div>
             </form>
@@ -94,6 +94,7 @@
     <!-- // wrap -->
 
     <!-- script -->
+    <script src="../asset/js/jquery.min.js"></script>
     <script src="../asset/js/common.js"></script>
     <!-- // script -->
   </body>
