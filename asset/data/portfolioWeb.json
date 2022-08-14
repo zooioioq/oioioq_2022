@@ -1,0 +1,93 @@
+[
+  {
+    "conLiTitle" : "YANOLJA",
+    "portDes" : "야놀자 WEB 리디자인 프로젝트",
+    "portStatus" : "Mobile & PC Responsive",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2021.05 ~ 2021.08",
+    "imgSrc" : "#",
+    "imgAlt" : "야놀자 WEB 리디자인 프로젝트",
+    "siteLink" : "https://project-yanolja.vercel.app/html/main.html"
+  },
+  {
+    "conLiTitle" : "LIME-KOR",
+    "portDes" : "라임컴퍼니 국문 홈페이지",
+    "portStatus" : "Mobile & PC Responsive",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2021.08 ~ 2021.10",
+    "imgSrc" : "#",
+    "imgAlt" : "라임컴퍼니 국문 홈페이지",
+    "siteLink" : "#"
+  },
+
+  {
+    "conLiTitle" : "LIME-SF",
+    "portDes" : "라임컴퍼니 세일즈포스 프로젝트",
+    "portStatus" : "Mobile & PC Responsive",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2021.10 ~ 2021.11",
+    "imgSrc" : "#",
+    "imgAlt" : "라임컴퍼니 세일즈포스 프로젝트",
+    "siteLink" : "#"
+  },
+  {
+    "conLiTitle" : "LIME-MALL",
+    "portDes" : "라임컴퍼니 임직원 복지몰 프로젝트",
+    "portStatus" : "Only mobile",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2021.11 ~ 2021.12",
+    "imgSrc" : "#",
+    "imgAlt" : "라임컴퍼니 임직원 복지몰 프로젝트",
+    "siteLink" : "#"
+  },
+  {
+    "conLiTitle" : "LIME-INTERVIEW",
+    "portDes" : "라임컴퍼니 면접자 사전 인터뷰 프로젝트",
+    "portStatus" : "Only PC",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2021.12 ~ 2022.01",
+    "imgSrc" : "#",
+    "imgAlt" : "라임컴퍼니 면접자 사전 인터뷰 프로젝트",
+    "siteLink" : "#"
+  },
+  {
+    "conLiTitle" : "LIME-FINTECH",
+    "portDes" : "라임컴퍼니 핀테크 어플 목업 프로젝트",
+    "portStatus" : "Only mobile",
+    "portLan" : "Figma, html",
+    "portDate" : "2022.01 ~ 2022.02",
+    "imgSrc" : "#",
+    "imgAlt" : "라임컴퍼니 핀테크 어플 목업 프로젝트",
+    "siteLink" : "#"
+  },
+  {
+    "conLiTitle" : "LIME-ENG",
+    "portDes" : "라임컴퍼니 영문 홈페이지",
+    "portStatus" : "Mobile & PC Responsive",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2022.02 ~ 2022.03",
+    "imgSrc" : "#",
+    "imgAlt" : "라임컴퍼니 영문 홈페이지",
+    "siteLink" : "#"
+  },
+  {
+    "conLiTitle" : "LooKC",
+    "portDes" : "LooKC 어플 디자인",
+    "portStatus" : "Mobile & Tablet Responsive",
+    "portLan" : "Figma",
+    "portDate" : "2022.03 ~ 2022.06",
+    "imgSrc" : "#",
+    "imgAlt" : "LooKC 어플 디자인",
+    "siteLink" : "#"
+  },  
+  {
+    "conLiTitle" : "LooKC-INTRO",
+    "portDes" : "LooKC 소개페이지 디자인",
+    "portStatus" : "Mobile & PC Responsive",
+    "portLan" : "HTML, CSS, javascript",
+    "portDate" : "2022.03 ~ 2022.06",
+    "imgSrc" : "#",
+    "imgAlt" : "LooKC 소개페이지 디자인",
+    "siteLink" : "#"
+  }
+]
