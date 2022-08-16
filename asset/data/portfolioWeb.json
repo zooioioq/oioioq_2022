@@ -5,7 +5,7 @@
     "portStatus" : "Mobile & PC Responsive",
     "portLan" : "HTML, CSS, javascript",
     "portDate" : "2021.05 ~ 2021.08",
-    "imgSrc" : "#",
+    "imgSrc" : "yanolja.png",
     "imgAlt" : "야놀자 WEB 리디자인 프로젝트",
     "siteLink" : "https://project-yanolja.vercel.app/html/main.html"
   },
@@ -19,7 +19,6 @@
     "imgAlt" : "라임컴퍼니 국문 홈페이지",
     "siteLink" : "#"
   },
-
   {
     "conLiTitle" : "LIME-SF",
     "portDes" : "라임컴퍼니 세일즈포스 프로젝트",

@@ -34,7 +34,7 @@
       var portStatus = portData[i].portStatus;
       var portLan = portData[i].portLan;
       var portDate = portData[i].portDate;
-      var imgSrc = 'url(' + imgUrl + portData[i].imgSrc + ')';
+      var imgSrc = imgUrl + portData[i].imgSrc;
       var imgAlt = portData[i].imgAlt;
       var siteLink = portData[i].siteLink;
 
